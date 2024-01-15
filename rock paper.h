@@ -44,11 +44,11 @@ void rock(void)
     
 
     while (1) {
-        n = rand() % 100;
+        n = rand() % 3;
 
-        if (n < 33) {
+        if (n==1) {
             computer = 'r';
-        } else if (n > 66) {
+        } else if (n==2) {
             computer = 'p';
         } else {
             computer = 's';
