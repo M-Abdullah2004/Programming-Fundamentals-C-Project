@@ -161,11 +161,23 @@ void snake(void)
         printf("KHATAM TATA BYE BYE!\n");
         printf("Your score: %d\n", score);
         char reset;
+        restart = 2;
+        while (restart==2)
+        {
         printf("If you want to play again Press Y/y else Press N/n.\n");
         scanf(" %c", &reset);
-        if (reset=='N' || reset=='n')
+        if (reset=='y' || reset=='Y')
         {
-    	    restart=1;
+    	    restart=0;
 	    }
+	    else if( reset=='n' || reset=='N')
+	    {
+	    	restart=1;
+		}
+		else
+		{
+			printf("Ayein yeh kya daba dia!\n");	
+		}
+	}
     }
 }
