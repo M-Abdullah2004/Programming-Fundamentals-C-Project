@@ -12,6 +12,7 @@ int main() {
     int choice;
 
     while (1) {
+        system("cls");
     printf("\t\t\t\t********************************\n");
     printf("\t\t\t\t* WELCOME TO  MOYE MOYE ARCADE *\n");
     printf("\t\t\t\t********************************\n\n");
